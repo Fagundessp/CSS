@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(244, 231, 213);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color: rgb(70, 19, 19);
+}
+
+h1#Principal{
+    text-align: center;
+}
+
+h2{
+    color: rgb(191, 191, 0);
+}
+p.Parágrafo{
+    text-indent: 30px;
+}
