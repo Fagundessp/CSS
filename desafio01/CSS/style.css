@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'bonda';
-    src: url('/FONTS/Eboracum.ttf'); 
+    src: url('/desafio01/FONTS/Eboracum.ttf'); 
     font-weight: normal;  
 }
 @font-face {
     font-family: 'bondadois';
-    src: url('/FONTS/LinguisticsPro-Regular.otf');
+    src: url('/desafio01/FONTS/LinguisticsPro-Regular.otf');
     font-weight: normal;
 }
 /* Cores para o projeto #401E31/ #483C73 #F2EEB6 #F28888 #F2F2F2
@@ -19,9 +19,10 @@
     --cor2:#F2EEB6;
     --cor3:#F28888;
     --cor4:#F2F2F2;
-    --fonte-padrao:'bondadois', arial;
-    --fonte-destaque:'bonda', arial;
+    --fonte-padrao:'bondadois';
+    --fonte-destaque:'bonda';
 }
+
 *{
     margin: 0px;
     padding:0px;
@@ -29,7 +30,7 @@
 
 body{
     background-color:var(--cor2);
-    font-family: var(--fonte-padrao);
+    font-family:var(--fonte-padrao);
 }
 
 
@@ -37,6 +38,7 @@ header{
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
     text-align: center;
     min-height: 150px;
+
     
 }
 header>h1{
@@ -99,14 +101,17 @@ main strong{
    background-color: var(--cor2);
    font-weight: bold;
    padding: 2px;
-}                
-main img{
+}   
+div.imagem{
+    border: 0px solid;
+    width: 255px;
+    height: 255px;
     margin: auto;
     display:block;
-    padding-top:20px;
-    font-size: 1.2em;
-    padding-bottom:20px;
-}
+    padding: 20px;
+    padding-bottom: 10px;
+}            
+
 aside{
     background-color: #483C73;
     padding: 10px;
