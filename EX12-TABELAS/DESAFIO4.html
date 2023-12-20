@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio04</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        th{
+            background-color: grey;
+            color: white;
+        }
+        td,th{
+            border:1px solid black;
+        }
+
+        .nf{
+            background-color: grey;
+            color: white;
+            text-align: center;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th rowspan="2" scope="col" >Área</th>
+            <th rowspan="2" scope="col">Diciplinas</th>
+            <th colspan="2" class="center" scope="colgroup">Notas</th>
+            <th rowspan="2" class="center" scope="col">Media</th>
+            <tr>
+                <th scope="col" colspan="#">Nota 1</th>
+                <th scope="col" colspan="#">Nota2</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">
+                    Exatas
+                </th>
+                    <td>Matematica</td>
+                    <td class="center">0.0</td>
+                    <td class="center">0.0</td>
+                    <td class="center">0.0</td>
+            </tr>
+            <tr>
+                    <td>Fisica</td>
+                    <td class="center">0.0</td>
+                    <td class="center">0.0</td>
+                    <td class="center">0.0</td>
+            </tr>
+            <tr>
+                    <td>Quimica</td>
+                    <td class="center">0.0</td>
+                    <td class="center">0.0</td>
+                    <td class="center">0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+        </tr>
+        <tr>
+            <th scope="row" colspan="4">Média de exatas</th>
+            <td class="nf">0.0</td>
+        </tr>
+        <tr>
+            <th scope="rowgroup" rowspan="2">Humanas</th>
+            <td>História</td>
+            <td class="center">0.0</td>
+            <td class="center">0.0</td>
+            <td class="center">0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td class="center">0.0</td>
+            <td class="center">0.0</td>
+            <td class="center">0.0</td>
+        </tr>
+        <tr>
+            <th scope="row" colspan="4">Media de humanas</th>
+            <td class="nf">0.0</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
