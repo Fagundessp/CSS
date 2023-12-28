@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outputs</title>
+</head>
+<body>
+    <form action="#" method="post" autocomplete="on">
+        <p>
+            <label for="in1">Numero:</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Numero:</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"> 
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name= soma id="isoma">0</output>
+        </p>
+
+    </form>
+
+    <form action="#" method="post">
+
+        <p>
+            <label for="inum">Numero</label>
+            <input type="range" name="num" id="inum" min="1" max="10" value="1" oninput="ival.innerHTML = Number (inum.value)">
+            <output id="ival">1</output>
+        </p>
+
+        <p>
+            
+
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetar">
+
+    </form>
+
+    <form action="">
+        <P>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2000" oninput="calcIdade()">
+            
+        </P>
+        <p>
+            <label for="iage">Idade</label>
+            <output id="iage">0</output>
+        </p>
+        <script>
+            function calcIdade(){
+                let atual = new Date().getFullYear()
+                iage.innerHTML = Number(atual) - Number(iano.value)
+            }
+        </script>
+
+
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetar">
+    </form>
+
+</body>
+</html>
