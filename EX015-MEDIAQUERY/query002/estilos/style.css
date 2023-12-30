@@ -8,11 +8,17 @@
 html, body{
     width:100vw;
     height:100vh;
-    background-color: black;
+    background-color: blue;
 }
 
 h1{
     color: aliceblue;
     text-shadow: 3px 3px 0px black;
     padding:15px ;
+}
+
+body{
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    
 }

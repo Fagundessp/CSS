@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*PORTRAIT*/
 body{
-    background-image: url('/');
+    background-image: url('/EX015-MEDIAQUERY/imagens/cev-portrait.jpg');
+    background-position: center bottom;
 }

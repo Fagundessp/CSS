@@ -1,2 +1,7 @@
 @charset "UTF-8";
 /*LANDSCAPE*/
+
+body{
+    background-image: url('/EX015-MEDIAQUERY/imagens/cev-landscape.jpg');
+    background-position: left bottom;
+}
