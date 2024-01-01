@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Menu responsivo</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Testando responsividade em query</h1>
+    
+    <span id="icon" class="material-symbols-outlined" onclick="clickMenu()">
+        menu
+        </span>
+    <menu id="hamb">
+        <ul>
+            <a href="#">
+                <li>1</li>
+            </a>
+            <a href="#">
+                <li>2</li>
+            </a>
+            <a href="#">
+                <li>3</li>
+            </a>
+            <a href="#">
+                <li>4</li>
+            </a>
+            <a href="#">
+                <li>5</li>
+            </a>
+        </ul>
+    </header>
+    </menu>
+    <main>
+        <article>
+            <h2>Testando media query</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis itaque, ducimus deserunt commodi aperiam consectetur suscipit atque porro sed ea est delectus maxime accusantium odit ipsum quisquam tempore eveniet facere!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatum cumque quo accusantium ullam dolor quam eaque necessitatibus eius impedit quae consequuntur temporibus quas dolores earum, eveniet atque ratione provident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolorum mollitia maxime quae nemo. Assumenda velit nulla est! Cumque mollitia atque illum fugiat nemo distinctio nam reiciendis commodi doloremque ea.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 700){
+                hamb.style.display = 'block'
+            } else{
+                hamb.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+           if (hamb.style.display == 'block'){
+            hamb.style.display = 'none'
+           } else{
+            hamb.style.display = 'block'
+           }
+           
+        }
+    </script>
+</body>
+</html>
